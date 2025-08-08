@@ -29,7 +29,7 @@ This process allows you to benefit from high-flow extrusion and I2C sensor suppo
 - If you use a different CAN (FYSTEC UCAN) board and it doesn't have 24V on it, then provide 24V directly to the toolhead.
 - Strip the wires and crimp/tin the ends or replace the connectors.
 
-![U2C wiring example](assets/u2c_wiring.jpg)
+![U2C wiring example](assets/u2c_wiring.jpeg)
 
 Here’s how the wiring should look when connected to the toolhead.
 
