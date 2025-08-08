@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+*.tmp
+.env
+*.code-workspace
+node_modules/
+dist/
+build/
