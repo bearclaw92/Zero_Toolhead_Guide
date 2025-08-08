@@ -29,6 +29,10 @@ This process allows you to benefit from high-flow extrusion and I2C sensor suppo
 - If you use a different CAN (FYSTEC UCAN) board and it doesn't have 24V on it, then provide 24V directly to the toolhead.
 - Strip the wires and crimp/tin the ends or replace the connectors.
 
+![U2C wiring example](assets/u2c_wiring.jpg)
+
+Here’s how the wiring should look when connected to the toolhead.
+
 | Function   | U2C Terminal Block | Wire Color (Stock Toolhead) |
 |------------|--------------------|-----------------------------|
 | CAN High   | CANH               | Green                       |
@@ -67,6 +71,10 @@ iface can0 can static
     bitrate 1000000
     up ip link set can0 txqueuelen 1024
 ```
+![can0 example](assets/can0.png)
+
+Here’s how the wiring should look when connected to the toolhead.
+
 *Note:* 500000 bitrate has been reported to work better in some setups.
 
 ```bash
@@ -93,6 +101,9 @@ make menuconfig  # Set for STM32F103, 8MHz crystal, CAN bus on PB8/PB9
 make clean
 make
 ```
+![U2C wiring example](assets/build_klipper.png)
+
+Here’s how the make menuconfig should look
 
 Flash Klipper:
 ```bash
@@ -107,6 +118,10 @@ Get UUID:
 python3 ~/katapult/scripts/flashtool.py -i can0 -q
 ```
 Use this UUID in your `printer.cfg`.
+
+![UUID Example](assets/uuid.png)
+
+Here’s how the wiring should look when connected to the toolhead.
 
 ---
 
@@ -223,3 +238,4 @@ This is a great upgrade path for experienced users looking to get into CAN, I2C,
 - [CANBus Esoterical](https://canbus.esoterical.online/)
 - [BTT Eddy Calibration](https://bttwiki.com/Eddy.html#calibration)
 - Thanks to the help from @More Hp in the Sovol SV08 Group
+![@morehp](assets/morehp_credit.jpg)
