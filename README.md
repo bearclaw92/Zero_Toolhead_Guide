@@ -238,4 +238,4 @@ This is a great upgrade path for experienced users looking to get into CAN, I2C,
 - [CANBus Esoterical](https://canbus.esoterical.online/)
 - [BTT Eddy Calibration](https://bttwiki.com/Eddy.html#calibration)
 - Thanks to the help from @More Hp in the Sovol SV08 Group
-![@morehp](assets/morehp_credit.jpg)
+![@morehp](assets/morehp_credit.png)
