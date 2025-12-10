@@ -14,6 +14,9 @@ This process allows you to benefit from high-flow extrusion and I2C sensor suppo
 - Sovol SV08 printer
 - Sovol Zero toolhead (with integrated Eddy sensor and extruder)
 - BTT U2C board (or equivalent USB-to-CAN adapter)
+  - Some CAN adapters ship with slcan vs. candlelight firmware.
+  - For this guide, candlelight works, slcan does not appear to work.
+  - For CANable boards, firmware can be updated/changed at [canable.io](https://canable.io/updater/)
 - Stock SV08 toolhead cable
 - Small screwdriver, wire cutters, wire strippers
 - Crimp ferrules or tinned wires
@@ -26,7 +29,9 @@ This process allows you to benefit from high-flow extrusion and I2C sensor suppo
 ### 1. Reuse the SV08 Stock Toolhead Cable
 - Clip off or unpin the connector ends that plug into the MAINBOARD of the stock SV08 toolhead harness.  
   *Note:* One user has reported they had better luck flipping the toolhead cable around because of the shield drain.
-- If you use a different CAN (FYSTEC UCAN) board and it doesn't have 24V on it, then provide 24V directly to the toolhead.
+- If you use a different CAN (FYSTEC UCAN, MKS CANable, etc.) board and it doesn't have 24V on it, then provide 24V directly to the toolhead.
+  - You may leave the nozzle power connection plugged into the mainboard for this (Two-pin red/black)
+  - Then just extend the 3-pin connector to your CAN board.
 - Strip the wires and crimp/tin the ends or replace the connectors.
 
 ![U2C wiring example](assets/u2c_wiring.jpeg)
